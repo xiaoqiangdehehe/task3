@@ -14,11 +14,11 @@
 <body>
 <h1>学生信息</h1>
     <c:if test="${student==null}" var="condition" scope="request">
-        <form action="/student/itschool/students" name="student" method="post">
+        <form action="/itschool/students" name="student" method="post">
     </c:if>
 
     <c:if test="${student!=null}" var="condition" scope="request">
-        <form action="/student/itschool/students/${student.id}" name="student" method="post">
+        <form action="/itschool/students/${student.id}" name="student" method="post">
     </c:if>
             姓名： <input name="name" type="text" value="${student.name}" required="required"><br/>
             Q  Q： <input name="qq" type="text" value="${student.qq}" required="required"><br/>
@@ -30,7 +30,7 @@
             立愿： <input name="mentor" type="text" value="${student.mentor}" required="required"><br/>
             辅导师兄： <input name="conbrother" type="text" value="${student.conbrother}" required="required"><br/>
             从何处了解到修真院： <input name="hknow" type="text" value="${student.hknow}" required="required"><br/>
-            <a href="/student/itschool/students">返回</a>
+            <a href="/itschool/students">返回</a>
             <input type="submit" value="提交">
         </form>
 </body>

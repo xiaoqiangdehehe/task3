@@ -2,6 +2,6 @@
 <html>
 <body>
 <h1>it修真院</h1>
-<a href="/student/itschool/menu">******进入目录******</a>
+<a href="/itschool/menu">******进入目录******</a>
 </body>
 </html>

@@ -6,6 +6,6 @@
 </head>
 <body>
 <h1>目录</h1>
-<a href="/student/itschool/students">学生信息</a>
+<a href="/itschool/students">学生信息</a>
 </body>
 </html>

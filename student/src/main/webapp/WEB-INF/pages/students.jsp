@@ -24,13 +24,13 @@
 </head>
 <body>
     <h1>学生信息</h1>
-    <form action="/student/itschool/students/student" method="get">
+    <form action="/itschool/students/student" method="get">
         <input name="id" type="text" placeholder="请输入查询ID" required="required">
         <input type="submit" value="查找">
     </form>
-    <a href="/student/itschool/students">****查看所有****</a>
-    <a href="/student/itschool/students/profile">****添加****</a>
-    <a href="/student/itschool/menu">****返回目录****</a>
+    <a href="/itschool/students">****查看所有****</a>
+    <a href="/itschool/students/profile">****添加****</a>
+    <a href="/itschool/menu">****返回目录****</a>
 
     <table border="1" width="100%">
         <thead>
@@ -62,8 +62,8 @@
                 <td>${student.mentor}</td>
                 <td>${student.conbrother}</td>
                 <td>${student.hknow}</td>
-                <td><a href="/student/itschool/students/profile/${student.id}">更新</a></td>
-                <td><a href="/student/itschool/students/${student.id}">删除</a></td>
+                <td><a href="/itschool/students/profile/${student.id}">更新</a></td>
+                <td><a href="/itschool/students/${student.id}">删除</a></td>
             </tr>
         </c:forEach>
     </table>
